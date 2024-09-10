@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StockMobile.Models.Request;
+using StockMobile.Models.Response;
 
 namespace StockMobile.Repositories.Login
 {
-    internal interface ILoginRepository
+    public interface ILoginRepository
     {
+        Task<LoginResponse> LoginAsync(LoginRequest loginRequest);
     }
 }

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StockMobile.Models.Response
+﻿namespace StockMobile.Models.Response
 {
-    internal class LoginResponse
+    public class LoginResponse
     {
+        public string acessToken { get; set; }
     }
 }

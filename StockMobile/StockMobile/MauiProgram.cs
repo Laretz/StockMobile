@@ -1,4 +1,6 @@
-﻿namespace StockMobile;
+﻿using StockMobile.Repositories.Login;
+
+namespace StockMobile;
 
 public static class MauiProgram
 {
@@ -17,6 +19,8 @@ public static class MauiProgram
 		builder.Services.AddSingleton<MainViewModel>();
 
 		builder.Services.AddSingleton<MainPage>();
+
+		builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 		return builder.Build();
 	}

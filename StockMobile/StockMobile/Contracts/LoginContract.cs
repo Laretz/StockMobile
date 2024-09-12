@@ -12,7 +12,7 @@ namespace StockMobile.Contracts
             Requires()
                 .IsNotNullOrEmpty(request.Email, "Email", "Email is required")
                 .IsEmail(request.Email, "Email", "Email invalid")
-                .IsNullOrEmpty(request.Password, "Senha", "Password cant be null");
+                .IsNotNullOrEmpty(request.Password, "Password", "Password cant be null");
         }
     }
 }

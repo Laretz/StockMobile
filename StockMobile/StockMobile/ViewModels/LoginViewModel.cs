@@ -30,7 +30,7 @@ namespace StockMobile.ViewModels
 
             if (!contract.IsValid)
             {
-                var messages = contract.Notifications.Select(x => x.Message);
+                var messages = contract.Notifications.Select(x => x.Message);   
                 var sb = new StringBuilder();
 
                 foreach (var message in messages)

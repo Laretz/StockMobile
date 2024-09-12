@@ -1,4 +1,5 @@
 ﻿using StockMobile.Repositories.Login;
+using StockMobile.Repositories.SignUp;
 
 namespace StockMobile;
 
@@ -23,7 +24,7 @@ public static class MauiProgram
 		builder.Services.AddTransient<LoginPage>();
 
 		builder.Services.AddScoped<ILoginRepository, LoginRepository>();
-
+		builder.Services.AddScoped<ISignUpRepository, SignUpRepository>();
 		return builder.Build();
 	}
 }
